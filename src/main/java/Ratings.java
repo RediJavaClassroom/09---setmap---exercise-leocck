@@ -38,7 +38,7 @@ public class Ratings {
 
     public float getAverageRating() {
         int totalRatings = getAmountRatings();
-        if (totalRatings == 0) return 0;
+        if (totalRatings == 0) return -1;
 
         float sumRatings = 0;
         for (Integer star : ratingAmounts.keySet()) {
